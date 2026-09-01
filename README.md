@@ -19,13 +19,19 @@ Pi downloads the package from npm and updates its settings automatically. No Git
 
 ## Add your ELM key
 
-Run the package's secure login command:
+Start Pi:
 
 ```sh
-pi-elm-models login
+pi
 ```
 
-Paste your ELM key when prompted. Input is not echoed. The command preserves existing Pi credentials and stores the key in `~/.pi/agent/auth.json` with user-only permissions.
+Inside Pi, run:
+
+```text
+/login
+```
+
+Select **Sign in with an API key**, choose **University of Edinburgh ELM**, then paste your ELM API key when prompted. Pi stores the key for future sessions.
 
 Alternatively, provide the key in the environment that launches Pi:
 
