@@ -15,6 +15,15 @@ export default function elmModels(pi: ExtensionAPI): void {
         id: ELM_QWEN_MODEL_ID,
         name: 'Qwen 3.5 397B',
         reasoning: true,
+        thinkingLevelMap: {
+          off: 'none',
+          minimal: null,
+          low: null,
+          medium: null,
+          high: 'high',
+          xhigh: null,
+          max: null,
+        },
         input: ['text', 'image'],
         cost: {
           input: 0.5,
@@ -26,6 +35,7 @@ export default function elmModels(pi: ExtensionAPI): void {
         maxTokens: 81920,
         compat: {
           maxTokensField: 'max_tokens',
+          supportsReasoningEffort: true,
           thinkingFormat: 'qwen',
         },
       },
