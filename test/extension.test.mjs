@@ -24,11 +24,21 @@ test('registers the production ELM Qwen provider', () => {
   const [model] = registration.config.models;
   assert.equal(model.id, ELM_QWEN_MODEL_ID);
   assert.equal(model.reasoning, true);
+  assert.deepEqual(model.thinkingLevelMap, {
+    off: 'none',
+    minimal: null,
+    low: null,
+    medium: null,
+    high: 'high',
+    xhigh: null,
+    max: null,
+  });
   assert.deepEqual(model.input, ['text', 'image']);
   assert.equal(model.contextWindow, 262144);
   assert.equal(model.maxTokens, 81920);
   assert.deepEqual(model.compat, {
     maxTokensField: 'max_tokens',
+    supportsReasoningEffort: true,
     thinkingFormat: 'qwen',
   });
 });

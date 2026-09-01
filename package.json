@@ -1,6 +1,6 @@
 {
   "name": "pi-elm-models",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Pi coding agent provider package for University of Edinburgh ELM-hosted models.",
   "type": "module",
   "main": "./dist/index.js",
