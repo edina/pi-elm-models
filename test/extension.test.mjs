@@ -58,6 +58,7 @@ test('registers the production ELM models', () => {
   assert.equal(mistralModel.contextWindow, 262144);
   assert.equal(mistralModel.maxTokens, 81920);
   assert.deepEqual(mistralModel.compat, {
+    supportsDeveloperRole: false,
     maxTokensField: 'max_tokens',
     supportsReasoningEffort: true,
     thinkingFormat: 'openai',

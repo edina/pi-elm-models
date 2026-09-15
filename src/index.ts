@@ -63,6 +63,7 @@ export default function elmModels(pi: ExtensionAPI): void {
         contextWindow: 262144,
         maxTokens: 81920,
         compat: {
+          supportsDeveloperRole: false,
           maxTokensField: 'max_tokens',
           supportsReasoningEffort: true,
           thinkingFormat: 'openai',
