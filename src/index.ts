@@ -55,8 +55,8 @@ export default function elmModels(pi: ExtensionAPI): void {
         },
         input: ['text', 'image'],
         cost: {
-          input: 0.3,
-          output: 0.3,
+          input: 0.10,
+          output: 0.40,
           cacheRead: 0,
           cacheWrite: 0,
         },
